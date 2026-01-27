@@ -1,34 +1,33 @@
-// Semua elemen dengan class fade-up
+// === ANIMASI SCROLL FADE-UP ===
 const fadeElements = document.querySelectorAll('.fade-up');
 
 function handleFade() {
-  const triggerBottom = window.innerHeight / 5 * 4;
+  const triggerBottom = window.innerHeight * 0.85;
 
   fadeElements.forEach(el => {
     const top = el.getBoundingClientRect().top;
 
-    if(top < triggerBottom) {
+    if (top < triggerBottom) {
       el.classList.add('active');
-      el.classList.remove('fade-out');
-    } else {
-      el.classList.remove('active');
-      el.classList.add('fade-out');
     }
   });
 }
 
-// Event scroll & load
 window.addEventListener('scroll', handleFade);
 window.addEventListener('load', handleFade);
 
-// Animasi cover saat buka undangan
+
+// === ANIMASI BUKA UNDANGAN ===
 function openInvitation() {
   const cover = document.querySelector('.cover');
-  cover.classList.add('fade-out');
-  cover.classList.remove('active');
+  const opening = document.getElementById('opening');
 
-  // Delay sebelum benar-benar disembunyikan agar animasi terlihat
+  cover.classList.add('fade-out');
+
   setTimeout(() => {
     cover.style.display = 'none';
-  }, 2000); // sama dengan duration fade
+
+    opening.scrollIntoView({ behavior: 'smooth' });
+    opening.classList.add('active');
+  }, 1800);
 }
