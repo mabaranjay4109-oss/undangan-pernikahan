@@ -30,11 +30,11 @@ section {
 
 .cover {
   min-height: 100vh;
-  background: linear-gradient(
-    rgba(250, 248, 245, 0.9),
-    rgba(250, 248, 245, 0.9)
-  ),
-  url("assets/img/bg-cover.jpg") center/cover no-repeat;
+background: linear-gradient(
+  rgba(250, 248, 245, 0.9),
+  rgba(250, 248, 245, 0.9)
+),
+  url("assets/img/cover.png") center/cover no-repeat;
 
   display: flex;
   align-items: center;
@@ -157,6 +157,7 @@ section {
 }
 
 .ampersand {
+  font-family: 'Great Vibes', cursive;
   font-size: 32px;
   color: #c9a44c;
   margin: 20px 0 40px;
