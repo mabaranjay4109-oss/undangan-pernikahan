@@ -1,0 +1,13 @@
+{
+  "name": "Undangan Pernikahan",
+  "short_name": "Undangan",
+  "start_url": ".",
+  "display": "standalone",
+  "icons": [
+        {
+      "src": "assets/img/icon.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    }
+   ]
+}
