@@ -5,9 +5,9 @@
   "display": "standalone",
   "icons": [
         {
-      "src": "assets/img/icon.jpg",
+      "src": "assets/img/icon.png",
       "sizes": "512x512",
-      "type": "image/jpg"
+      "type": "image/png"
     }
    ]
 }
